@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jecinta Umeohana | Cloud DevOps Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background-color: #1a1f2e; }
+        .glow-border { box-shadow: 0 0 20px rgba(59, 130, 246, 0.5); }
+        .grid-dot { background-image: radial-gradient(#2d3748 1px, transparent 1px); background-size: 20px 20px; }
+        .project-card:hover { border-color: #3b82f6; transform: translateY(-5px); transition: all 0.3s ease; }
+        .nav-link:hover { color: #3b82f6; transition: 0.3s; }
+    </style>
+</head>
+<body class="text-slate-200 font-sans grid-dot">
+
+    <nav class="fixed top-0 w-full z-50 bg-[#1a1f2e]/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-white">JU<span class="text-blue-500">.DevOps</span></a>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#about" class="nav-link text-slate-300">About</a>
+                <a href="#projects" class="nav-link text-slate-300">Projects</a>
+                <a href="#competencies" class="nav-link text-slate-300">Skills</a>
+                <a href="#contact" class="nav-link text-slate-300">Contact</a>
+            </div>
+            <div class="md:hidden text-2xl"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <section class="flex flex-col items-center justify-center pt-32 pb-10 px-6 text-center">
+        <div class="relative mb-8">
+            <img src="./WhatsApp Image 2026-03-08 at 00.35.38.jpeg" alt="Jecinta Umeohana" 
+                 class="w-40 h-40 rounded-full object-cover border-4 border-blue-500 glow-border">
+        </div>
+
+        <h1 class="text-4xl md:text-6xl font-bold text-white mb-2">Jecinta Onyinyechi Umeohana</h1>
+        <h2 class="text-xl md:text-2xl text-blue-400 font-medium mb-6">Cloud DevOps Engineer</h2>
+
+        <!-- <div class="flex flex-wrap justify-center gap-3 mb-10">
+            <span class="px-4 py-1 rounded-full border border-orange-500 text-orange-500 text-sm font-medium">AWS Solutions Architect (In-Progress)</span>
+            <span class="px-4 py-1 rounded-full border border-blue-400 text-blue-400 text-sm font-medium">Cloud Expert</span>
+            <span class="px-4 py-1 rounded-full border border-purple-500 text-purple-500 text-sm font-medium">Terraform Specialist</span>
+        </div> -->
+
+        <div class="flex flex-wrap justify-center gap-4 mb-10">
+            <a href="https://www.linkedin.com/in/umeh-jecinta" target="_blank" class="flex items-center gap-2 bg-[#0077b5] px-6 py-3 rounded-lg font-bold text-white hover:opacity-90 transition"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/UmehJecinta" target="_blank" class="flex items-center gap-2 bg-[#24292e] px-6 py-3 rounded-lg font-bold text-white hover:opacity-90 transition"><i class="fab fa-github"></i> GitHub</a>
+            <a href="#contact" class="flex items-center gap-2 bg-[#10b981] px-6 py-3 rounded-lg font-bold text-white hover:opacity-90 transition"><i class="fas fa-envelope"></i> Contact Me</a>
+            <a href="./Jecinta_Umeohana_DevOps_CV.pdf" class="flex items-center gap-2 bg-[#8b5cf6] px-6 py-3 rounded-lg font-bold text-white hover:opacity-90 transition"><i class="fas fa-eye"></i> View CV</a>
+        </div>
+    </section>
+
+    <section id="about" class="max-w-5xl mx-auto px-6 py-24 border-t border-slate-800">
+        <h2 class="text-2xl font-bold text-white mb-6 underline decoration-blue-500 decoration-4 underline-offset-8">About Me</h2>
+        <div class="text-slate-400 leading-relaxed mb-8">
+            <p class="mb-4">I’m Jecinta Onyinyechi Umeohana, a Cloud Solutions Engineer with 1.5+ years of intensive technical training and internship experience in cloud infrastructure and DevOps practices. I have hands-on experience designing and deploying scalable environments on Amazon Web Services (AWS), including building cloud architectures using Terraform to automate infrastructure provisioning.</p>
+            <p>I've deployed applications on Linux servers using Docker for containerization, Ansible for automated configuration management, and CI/CD pipelines to streamline application build and deployment workflows.</p>
+            <p>I'm currently expanding my skills in Kubernetes and working toward the AWS Certified Solutions Architect certification while continuing to build scalable, automated, and reliable cloud solutions.</p>
+        </div>
+
+        <h3 class="text-xl font-bold text-white mb-4">Education</h3>
+        <div class="text-slate-400">
+            <p class="text-white font-semibold">Bachelor of Science in Business Administration</p>
+            <p>Nnamdi Azikiwe University</p>
+        </div>
+    </section>
+
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-24 border-t border-slate-800">
+        <h2 class="text-3xl font-bold text-white text-center mb-12">Featured Projects</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="project-card bg-slate-800/40 p-8 rounded-2xl border border-slate-700">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-xl font-bold text-blue-400">AWS 2-Tier Infrastructure</h3>
+                    <i class="fas fa-network-wired text-slate-500"></i>
+                </div>
+                <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                    Architected a fault-tolerant web app using Terraform. Configured custom VPC architecture with public/private subnets across two AZs. Implemented Auto Scaling Groups and ALBs, reducing deployment time by 75%.
+                </p>
+                <div class="flex flex-wrap gap-2 text-[10px] uppercase font-bold">
+                    <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">Terraform</span>
+                    <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">VPC</span>
+                    <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">Auto Scaling</span>
+                </div>
+            </div>
+
+            <div class="project-card bg-slate-800/40 p-8 rounded-2xl border border-slate-700">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-xl font-bold text-emerald-400">Serverless E-Commerce Platform</h3>
+                    <i class="fas fa-bolt text-slate-500"></i>
+                </div>
+                <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                    Designed a serverless application leveraging CloudFront, S3, DynamoDB, and Lambda. Resulted in 40% cost savings and 30% reduction in latency via CDN optimization.
+                </p>
+                <div class="flex flex-wrap gap-2 text-[10px] uppercase font-bold">
+                    <span class="bg-slate-900 px-3 py-1 rounded text-emerald-400 border border-emerald-900">Lambda</span>
+                    <span class="bg-slate-900 px-3 py-1 rounded text-emerald-400 border border-emerald-900">API Gateway</span>
+                    <span class="bg-slate-900 px-3 py-1 rounded text-emerald-400 border border-emerald-900">DynamoDB</span>
+                </div>
+            </div>
+
+            <div class="project-card bg-slate-800/40 p-8 rounded-2xl border border-slate-700">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-xl font-bold text-purple-400">Automated App Deployment</h3>
+                    <i class="fab fa-docker text-slate-500"></i>
+                </div>
+                <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                    Automated Flask/Django deployment using Ansible playbooks and Docker Compose. Ensured zero environment drift and portable containerized application scaling.
+                </p>
+                <div class="flex flex-wrap gap-2 text-[10px] uppercase font-bold">
+                    <span class="bg-slate-900 px-3 py-1 rounded text-purple-400 border border-purple-900">Ansible</span>
+                    <span class="bg-slate-900 px-3 py-1 rounded text-purple-400 border border-purple-900">Docker</span>
+                    <span class="bg-slate-900 px-3 py-1 rounded text-purple-400 border border-purple-900">Python</span>
+                </div>
+            </div>
+
+            <div class="project-card bg-slate-800/40 p-8 rounded-2xl border border-slate-700">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-xl font-bold text-orange-400">Cloud Data Management</h3>
+                    <i class="fas fa-database text-slate-500"></i>
+                </div>
+                <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                    Engineered data pipelines using AWS CLI/Lambda to sync S3 and DynamoDB. Established S3 Cross-Region Replication for high availability and disaster recovery.
+                </p>
+                <div class="flex flex-wrap gap-2 text-[10px] uppercase font-bold">
+                    <span class="bg-slate-900 px-3 py-1 rounded text-orange-400 border border-orange-900">AWS CLI</span>
+                    <span class="bg-slate-900 px-3 py-1 rounded text-orange-400 border border-orange-900">Lambda</span>
+                    <span class="bg-slate-900 px-3 py-1 rounded text-orange-400 border border-orange-900">S3 Replication</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="competencies" class="max-w-6xl mx-auto px-6 py-24 border-t border-slate-800">
+        <h2 class="text-3xl font-bold text-white text-center mb-12">Core Competencies</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-slate-800/40 p-6 rounded-xl border border-slate-700">
+                <h3 class="text-blue-400 font-bold mb-4">Cloud Platforms</h3>
+                <ul class="text-sm space-y-2 text-slate-400">
+                    <li>AWS (EC2, VPC, S3, Lambda)</li>
+                    <li>API Gateway, Route 53</li>
+                    <li>CloudFront, DynamoDB</li>
+                    <li>CloudWatch Monitoring</li>
+                </ul>
+            </div>
+            <div class="bg-slate-800/40 p-6 rounded-xl border border-slate-700">
+                <h3 class="text-blue-400 font-bold mb-4">Infrastructure as Code</h3>
+                <ul class="text-sm space-y-2 text-slate-400">
+                    <li>Terraform</li>
+                    <li>Ansible Playbooks</li>
+                    <li>HCL</li>
+                    <li>YAML</li>
+                    <li>JSON</li>
+                </ul>
+            </div>
+            <div class="bg-slate-800/40 p-6 rounded-xl border border-slate-700">
+                <h3 class="text-blue-400 font-bold mb-4">Containers</h3>
+                <ul class="text-sm space-y-2 text-slate-400">
+                    <li>Docker</li>
+                    <li>Kubernetes</li>
+                    <li>Nginx Load Balancing</li>
+                </ul>
+            </div>
+            <div class="bg-slate-800/40 p-6 rounded-xl border border-slate-700">
+                <h3 class="text-blue-400 font-bold mb-4">Networking</h3>
+                <ul class="text-sm space-y-2 text-slate-400">
+                    <li>VPC Subnet Design</li>
+                    <li>IGW</li>
+                    <l>NAT Gateway</li>
+                    <li>SSL/TLS</li>
+                </ul>
+            </div>
+             <div class="bg-slate-800/40 p-6 rounded-xl border border-slate-700">
+                <h3 class="text-blue-400 font-bold mb-4">  CI/CD & GitOps</h3>
+                <ul class="text-sm space-y-2 text-slate-400">
+                    <li>GitLab CI/CD</li>
+                    <li>GitHub Actions</l>
+                    <li>Jenkins</li>
+                    <li>ArgoCD</li>
+                </ul>
+            </div>
+             <!-- <div class="bg-slate-800/40 p-6 rounded-xl border border-slate-700">
+                <h3 class="text-blue-400 font-bold mb-4">  CI/CD & GitOps</h3>
+                <ul class="text-sm space-y-2 text-slate-400">
+                    <li>GitLab CI/CD</li>
+                    <li>GitHub Actions</l>
+                    <l>Jenkins</li>
+                    <li>ArgoCD</li>
+                </ul>
+            </div> -->
+        </div>
+    </section>
+
+    <section id="contact" class="max-w-4xl mx-auto px-6 py-24 text-center">
+        <h2 class="text-4xl font-bold text-white mb-6">Get In Touch</h2>
+        <div class="flex flex-col items-center space-y-4 text-lg mb-10">
+            <a href="mailto:onyiijecinta22@gmail.com" class="text-blue-400 hover:underline flex items-center gap-2">
+                <i class="fas fa-envelope"></i>umehjecinta2@gmail.com
+            </a>
+            <p class="text-slate-300 flex items-center gap-2"><i class="fas fa-phone"></i> +234 701 935 8274</p>
+            <p class="text-slate-300 flex items-center gap-2"><i class="fas fa-map-marker-alt"></i>Abuja, Nigeria</p>
+        </div>
+        <div class="flex justify-center gap-6 text-3xl">
+            <a href="https://www.linkedin.com/in/umeh-jecinta" class="text-slate-500 hover:text-white transition"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/UmehJecinta" class="text-slate-500 hover:text-white transition"><i class="fab fa-github"></i></a>
+        </div>
+        <p class="mt-20 text-slate-600 text-sm italic">© 2026 Jecinta Umeohana. All rights reserved.</p>
+    </section>
+
+</body>
+</html>
+
