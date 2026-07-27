@@ -38,12 +38,6 @@
         <h1 class="text-4xl md:text-6xl font-bold text-white mb-2">Jecinta Onyinyechi Umeohana</h1>
         <h2 class="text-xl md:text-2xl text-blue-400 font-medium mb-6">Cloud DevOps Engineer</h2>
 
-        <!-- <div class="flex flex-wrap justify-center gap-3 mb-10">
-            <span class="px-4 py-1 rounded-full border border-orange-500 text-orange-500 text-sm font-medium">AWS Solutions Architect (In-Progress)</span>
-            <span class="px-4 py-1 rounded-full border border-blue-400 text-blue-400 text-sm font-medium">Cloud Expert</span>
-            <span class="px-4 py-1 rounded-full border border-purple-500 text-purple-500 text-sm font-medium">Terraform Specialist</span>
-        </div> -->
-
         <div class="flex flex-wrap justify-center gap-4 mb-10">
             <a href="https://www.linkedin.com/in/umeh-jecinta" target="_blank" class="flex items-center gap-2 bg-[#0077b5] px-6 py-3 rounded-lg font-bold text-white hover:opacity-90 transition"><i class="fab fa-linkedin"></i> LinkedIn</a>
             <a href="https://github.com/UmehJecinta" target="_blank" class="flex items-center gap-2 bg-[#24292e] px-6 py-3 rounded-lg font-bold text-white hover:opacity-90 transition"><i class="fab fa-github"></i> GitHub</a>
@@ -56,7 +50,7 @@
         <h2 class="text-2xl font-bold text-white mb-6 underline decoration-blue-500 decoration-4 underline-offset-8">About Me</h2>
         <div class="text-slate-400 leading-relaxed mb-8">
             <p class="mb-4">I’m Jecinta Onyinyechi Umeohana, a Cloud DevOps Engineer with 1.5+ years of intensive technical training and internship experience in cloud infrastructure and DevOps practices. I have hands-on experience designing and deploying scalable environments on Amazon Web Services (AWS), including building cloud architectures using Terraform to automate infrastructure provisioning.</p>
-            <p>I've deployed applications on Linux servers using Docker for containerization, Ansible for automated configuration management, and CI/CD pipelines to streamline application build and deployment workflows.</p>
+            <p class="mb-4">I've containerized multi-tier applications using Docker Compose, configured Nginx reverse proxies, secured end-to-end traffic with Cloudflare SSL, built automated GitHub Actions CI/CD pipelines with rollback capabilities, and orchestrated deployments using Ansible.</p>
             <p>I'm currently expanding my skills in Kubernetes and working toward the AWS Certified Solutions Architect certification while continuing to build scalable, automated, and reliable cloud solutions.</p>
         </div>
 
@@ -71,6 +65,41 @@
         <h2 class="text-3xl font-bold text-white text-center mb-12">Featured Projects</h2>
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- NEW PROJECT: 3-Tier React/Django/Postgres Deployment & Automated CI/CD -->
+            <div class="project-card bg-slate-800/40 p-8 rounded-2xl border border-slate-700 md:col-span-2">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4 gap-2">
+                    <h3 class="text-2xl font-bold text-blue-400">3-Tier React/Django/Postgres Deployment & Automated CI/CD</h3>
+                    <div class="flex items-center gap-2">
+                        <span class="px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 text-xs font-semibold">Production DevOps</span>
+                        <i class="fas fa-layer-group text-slate-500 text-xl"></i>
+                    </div>
+                </div>
+                <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                    Containerized and deployed a 3-tier React/Django/Postgres application to AWS EC2 inside a custom VPC using Docker Compose. Fronted with Nginx as a reverse proxy, secured end-to-end with a Cloudflare Origin Certificate in Full Strict mode, and automated via a GitHub Actions pipeline with health checks, Docker Hub registry publishing, and self-healing rollbacks.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6 text-xs text-slate-300">
+                    <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-800">
+                        <strong class="text-blue-400 block mb-1">Architecture & Automation:</strong>
+                        Build-once, deploy-everywhere pattern pushing immutable tags to Docker Hub. GitHub Actions pipeline featuring automated health checks and rollback logic.
+                    </div>
+                    <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-800">
+                        <strong class="text-blue-400 block mb-1">Troubleshooting & Reliability:</strong>
+                        Debugged Nginx <code class="text-blue-300">proxy_pass</code> path stripping, environment variable propagation, unpinned image versions, and isolated runner issues.
+                    </div>
+                </div>
+                <div class="flex flex-wrap gap-2 text-[10px] uppercase font-bold mb-6">
+                    <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">AWS EC2 & VPC</span>
+                    <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">Docker Compose</span>
+                    <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">GitHub Actions</span>
+                    <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">Docker Hub</span>
+                    <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">Nginx Proxy</span>
+                    <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">Cloudflare SSL (Strict)</span>
+                </div>
+                <a href="https://github.com/UmehJecinta" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-blue-400 hover:text-blue-300 transition">
+                    <i class="fab fa-github"></i> View Architecture & Pipeline Code <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+
             <div class="project-card bg-slate-800/40 p-8 rounded-2xl border border-slate-700">
                 <div class="flex justify-between items-start mb-4">
                     <h3 class="text-xl font-bold text-blue-400">AWS 2-Tier Infrastructure</h3>
@@ -156,47 +185,39 @@
                 </ul>
             </div>
             <div class="bg-slate-800/40 p-6 rounded-xl border border-slate-700">
-                <h3 class="text-blue-400 font-bold mb-4">Containers</h3>
+                <h3 class="text-blue-400 font-bold mb-4">Containers & Registries</h3>
                 <ul class="text-sm space-y-2 text-slate-400">
-                    <li>Docker</li>
+                    <li>Docker & Docker Compose</li>
+                    <li>Docker Hub Registry</li>
                     <li>Kubernetes</li>
-                    <li>Nginx Load Balancing</li>
+                    <li>Nginx Reverse Proxy</li>
                 </ul>
             </div>
             <div class="bg-slate-800/40 p-6 rounded-xl border border-slate-700">
-                <h3 class="text-blue-400 font-bold mb-4">Networking</h3>
+                <h3 class="text-blue-400 font-bold mb-4">Networking & Security</h3>
                 <ul class="text-sm space-y-2 text-slate-400">
                     <li>VPC Subnet Design</li>
-                    <li>IGW</li>
-                    <l>NAT Gateway</li>
-                    <li>SSL/TLS</li>
+                    <li>IGW & NAT Gateways</li>
+                    <li>Cloudflare SSL (Full Strict)</li>
+                    <li>Security Groups & Firewalls</li>
                 </ul>
             </div>
-             <div class="bg-slate-800/40 p-6 rounded-xl border border-slate-700">
-                <h3 class="text-blue-400 font-bold mb-4">  CI/CD & GitOps</h3>
-                <ul class="text-sm space-y-2 text-slate-400">
-                    <li>GitLab CI/CD</li>
-                    <li>GitHub Actions</l>
-                    <li>Jenkins</li>
-                    <li>ArgoCD</li>
+            <div class="bg-slate-800/40 p-6 rounded-xl border border-slate-700 lg:col-span-4">
+                <h3 class="text-blue-400 font-bold mb-4 text-center">CI/CD & GitOps</h3>
+                <ul class="text-sm flex flex-wrap justify-center gap-6 text-slate-400">
+                    <li><i class="fab fa-github text-white mr-1"></i> GitHub Actions (Workflows, Health Checks, Rollbacks)</li>
+                    <li><i class="fab fa-gitlab text-orange-400 mr-1"></i> GitLab CI/CD</li>
+                    <li><i class="fab fa-jenkins text-blue-300 mr-1"></i> Jenkins</li>
+                    <li><i class="fas fa-sync text-emerald-400 mr-1"></i> ArgoCD</li>
                 </ul>
             </div>
-             <!-- <div class="bg-slate-800/40 p-6 rounded-xl border border-slate-700">
-                <h3 class="text-blue-400 font-bold mb-4">  CI/CD & GitOps</h3>
-                <ul class="text-sm space-y-2 text-slate-400">
-                    <li>GitLab CI/CD</li>
-                    <li>GitHub Actions</l>
-                    <l>Jenkins</li>
-                    <li>ArgoCD</li>
-                </ul>
-            </div> -->
         </div>
     </section>
 
     <section id="contact" class="max-w-4xl mx-auto px-6 py-24 text-center">
         <h2 class="text-4xl font-bold text-white mb-6">Get In Touch</h2>
         <div class="flex flex-col items-center space-y-4 text-lg mb-10">
-            <a href="mailto:onyiijecinta22@gmail.com" class="text-blue-400 hover:underline flex items-center gap-2">
+            <a href="mailto:umehjecinta2@gmail.com" class="text-blue-400 hover:underline flex items-center gap-2">
                 <i class="fas fa-envelope"></i>umehjecinta2@gmail.com
             </a>
             <p class="text-slate-300 flex items-center gap-2"><i class="fas fa-phone"></i> +234 701 935 8274</p>
@@ -211,4 +232,3 @@
 
 </body>
 </html>
-
