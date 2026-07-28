@@ -16,6 +16,7 @@
 </head>
 <body class="text-slate-200 font-sans grid-dot">
 
+    <!-- NAVIGATION -->
     <nav class="fixed top-0 w-full z-50 bg-[#1a1f2e]/90 backdrop-blur-md border-b border-slate-800">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-xl font-bold text-white">JU<span class="text-blue-500">.DevOps</span></a>
@@ -29,6 +30,7 @@
         </div>
     </nav>
 
+    <!-- HERO SECTION -->
     <section class="flex flex-col items-center justify-center pt-32 pb-10 px-6 text-center">
         <div class="relative mb-8">
             <img src="./WhatsApp Image 2026-03-08 at 00.35.38.jpeg" alt="Jecinta Umeohana" 
@@ -42,10 +44,11 @@
             <a href="https://www.linkedin.com/in/umeh-jecinta" target="_blank" class="flex items-center gap-2 bg-[#0077b5] px-6 py-3 rounded-lg font-bold text-white hover:opacity-90 transition"><i class="fab fa-linkedin"></i> LinkedIn</a>
             <a href="https://github.com/UmehJecinta" target="_blank" class="flex items-center gap-2 bg-[#24292e] px-6 py-3 rounded-lg font-bold text-white hover:opacity-90 transition"><i class="fab fa-github"></i> GitHub</a>
             <a href="#contact" class="flex items-center gap-2 bg-[#10b981] px-6 py-3 rounded-lg font-bold text-white hover:opacity-90 transition"><i class="fas fa-envelope"></i> Contact Me</a>
-            <a href="./Jecinta_Umeohana_DevOps_CV.pdf" class="flex items-center gap-2 bg-[#8b5cf6] px-6 py-3 rounded-lg font-bold text-white hover:opacity-90 transition"><i class="fas fa-eye"></i> View CV</a>
+            <a href="./Jecinta_Umeohana_DevOps_CV_Updated.pdf" class="flex items-center gap-2 bg-[#8b5cf6] px-6 py-3 rounded-lg font-bold text-white hover:opacity-90 transition"><i class="fas fa-eye"></i> View CV</a>
         </div>
     </section>
 
+    <!-- ABOUT SECTION -->
     <section id="about" class="max-w-5xl mx-auto px-6 py-24 border-t border-slate-800">
         <h2 class="text-2xl font-bold text-white mb-6 underline decoration-blue-500 decoration-4 underline-offset-8">About Me</h2>
         <div class="text-slate-400 leading-relaxed mb-8">
@@ -61,123 +64,142 @@
         </div>
     </section>
 
+    <!-- FEATURED PROJECTS SECTION (6 Equal Grid Cards) -->
     <section id="projects" class="max-w-6xl mx-auto px-6 py-24 border-t border-slate-800">
         <h2 class="text-3xl font-bold text-white text-center mb-12">Featured Projects</h2>
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- PROJECT 1: 3-Tier React/Django/Postgres Deployment & Automated CI/CD -->
-            <div class="project-card bg-slate-800/40 p-8 rounded-2xl border border-slate-700 md:col-span-2">
-                <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4 gap-2">
-                    <h3 class="text-2xl font-bold text-blue-400">3-Tier React/Django/Postgres Deployment & Automated CI/CD</h3>
-                    <div class="flex items-center gap-2">
-                        <span class="px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 text-xs font-semibold">Production DevOps</span>
-                        <i class="fas fa-layer-group text-slate-500 text-xl"></i>
+
+            <!-- PROJECT 1: Cloudflare Edge Pipeline & IaC (Code) -->
+            <div class="project-card bg-slate-800/40 p-8 rounded-2xl border border-slate-700 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-bold text-blue-400">Automated Edge CI/CD Pipeline</h3>
+                        <i class="fas fa-globe text-slate-500"></i>
                     </div>
-                </div>
-                <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                    Containerized and deployed a 3-tier React/Django/Postgres application to AWS EC2 inside a custom VPC using Docker Compose. Fronted with Nginx as a reverse proxy, secured end-to-end with a Cloudflare Origin Certificate in Full Strict mode, and automated via a GitHub Actions pipeline with health checks, Docker Hub registry publishing, and automated rollbacks.
-                </p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6 text-xs text-slate-300">
-                    <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-800">
-                        <strong class="text-blue-400 block mb-1">Architecture & Automation:</strong>
-                        Build-once, deploy-everywhere pattern pushing immutable tags to Docker Hub. GitHub Actions pipeline featuring automated health checks and rollback logic.
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        Engineered a GitOps CI/CD pipeline delivering this portfolio to Cloudflare’s global edge. Defined routes using Wrangler IaC (<code class="text-blue-300">wrangler.jsonc</code>), enforced least-privilege API scoping in GitHub Secrets, and eliminated legacy AWS DNS records.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-[10px] uppercase font-bold mb-6">
+                        <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">Cloudflare Pages</span>
+                        <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">Wrangler IaC</span>
+                        <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">GitHub Actions</span>
                     </div>
-                    <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-800">
-                        <strong class="text-blue-400 block mb-1">Troubleshooting & Reliability:</strong>
-                        Debugged Nginx <code class="text-blue-300">proxy_pass</code> path stripping, environment variable propagation, unpinned image versions, and isolated runner issues.
-                    </div>
-                </div>
-                <div class="flex flex-wrap gap-2 text-[10px] uppercase font-bold mb-6">
-                    <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">AWS EC2 & VPC</span>
-                    <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">Docker Compose</span>
-                    <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">GitHub Actions</span>
-                    <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">Docker Hub</span>
-                    <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">Nginx Proxy</span>
-                    <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">Cloudflare SSL (Strict)</span>
                 </div>
                 <a href="https://github.com/UmehJecinta/My_portfolio" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-bold text-blue-400 hover:text-blue-300 transition">
-                    <i class="fab fa-github"></i> View Architecture & Pipeline Code <i class="fas fa-arrow-right text-xs"></i>
+                    <i class="fab fa-github"></i> View Pipeline Code <i class="fas fa-arrow-right text-xs"></i>
                 </a>
             </div>
 
-            <!-- PROJECT 2: AWS 2-Tier Infrastructure -->
-            <div class="project-card bg-slate-800/40 p-8 rounded-2xl border border-slate-700">
-                <div class="flex justify-between items-start mb-4">
-                    <h3 class="text-xl font-bold text-blue-400">AWS 2-Tier Infrastructure</h3>
-                    <i class="fas fa-network-wired text-slate-500"></i>
+            <!-- PROJECT 2: 3-Tier Application & Automated CI/CD (Code) -->
+            <div class="project-card bg-slate-800/40 p-8 rounded-2xl border border-slate-700 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-bold text-blue-400">3-Tier React/Django App Deployment</h3>
+                        <i class="fas fa-layer-group text-slate-500"></i>
+                    </div>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        Containerized a multi-tier app on AWS EC2 using Docker Compose and Nginx reverse proxy. Automated deployment with a GitHub Actions pipeline featuring Docker Hub registry publishing and health check rollbacks.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-[10px] uppercase font-bold mb-6">
+                        <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">AWS EC2 & VPC</span>
+                        <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">Docker Compose</span>
+                        <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">GitHub Actions</span>
+                    </div>
                 </div>
-                <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                    Architected a fault-tolerant web app using Terraform. Configured custom VPC architecture with public/private subnets across two AZs. Implemented Auto Scaling Groups and ALBs, reducing deployment time by 75%.
-                </p>
-                <div class="flex flex-wrap gap-2 text-[10px] uppercase font-bold mb-6">
-                    <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">Terraform</span>
-                    <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">VPC</span>
-                    <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">Auto Scaling</span>
-                </div>
-                <a href="https://github.com/UmehJecinta/aws-2tier-architecture" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-bold text-blue-400 hover:text-blue-300 transition">
-                    <i class="fab fa-github"></i> View Architecture & Code <i class="fas fa-arrow-right text-xs"></i>
-                </a>
-            </div>
-
-            <!-- PROJECT 3: Serverless E-Commerce Platform -->
-            <div class="project-card bg-slate-800/40 p-8 rounded-2xl border border-slate-700">
-                <div class="flex justify-between items-start mb-4">
-                    <h3 class="text-xl font-bold text-emerald-400">Serverless E-Commerce Platform</h3>
-                    <i class="fas fa-bolt text-slate-500"></i>
-                </div>
-                <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                    Designed a serverless application leveraging CloudFront, S3, DynamoDB, and Lambda. Resulted in 40% cost savings and 30% reduction in latency via CDN optimization.
-                </p>
-                <div class="flex flex-wrap gap-2 text-[10px] uppercase font-bold mb-6">
-                    <span class="bg-slate-900 px-3 py-1 rounded text-emerald-400 border border-emerald-900">Lambda</span>
-                    <span class="bg-slate-900 px-3 py-1 rounded text-emerald-400 border border-emerald-900">API Gateway</span>
-                    <span class="bg-slate-900 px-3 py-1 rounded text-emerald-400 border border-emerald-900">DynamoDB</span>
-                </div>
-                <a href="https://github.com/UmehJecinta" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-bold text-emerald-400 hover:text-emerald-300 transition">
+                <a href="https://github.com/UmehJecinta/My_portfolio" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-bold text-blue-400 hover:text-blue-300 transition">
                     <i class="fab fa-github"></i> View Code <i class="fas fa-arrow-right text-xs"></i>
                 </a>
             </div>
 
-            <!-- PROJECT 4: Automated App Deployment -->
-            <div class="project-card bg-slate-800/40 p-8 rounded-2xl border border-slate-700">
-                <div class="flex justify-between items-start mb-4">
-                    <h3 class="text-xl font-bold text-purple-400">Automated App Deployment</h3>
-                    <i class="fab fa-docker text-slate-500"></i>
+            <!-- PROJECT 3: AWS 2-Tier Infrastructure (Code) -->
+            <div class="project-card bg-slate-800/40 p-8 rounded-2xl border border-slate-700 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-bold text-blue-400">AWS 2-Tier Infrastructure</h3>
+                        <i class="fas fa-network-wired text-slate-500"></i>
+                    </div>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        Architected a fault-tolerant web app using Terraform. Configured custom VPC architecture with public/private subnets across two AZs. Implemented Auto Scaling Groups and ALBs, reducing deployment time by 75%.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-[10px] uppercase font-bold mb-6">
+                        <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">Terraform</span>
+                        <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">VPC</span>
+                        <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">Auto Scaling</span>
+                    </div>
                 </div>
-                <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                    Automated Flask/Django deployment using Ansible playbooks and Docker Compose. Ensured zero environment drift and portable containerized application scaling.
-                </p>
-                <div class="flex flex-wrap gap-2 text-[10px] uppercase font-bold mb-6">
-                    <span class="bg-slate-900 px-3 py-1 rounded text-purple-400 border border-purple-900">Ansible</span>
-                    <span class="bg-slate-900 px-3 py-1 rounded text-purple-400 border border-purple-900">Docker</span>
-                    <span class="bg-slate-900 px-3 py-1 rounded text-purple-400 border border-purple-900">Python</span>
+                <a href="https://github.com/UmehJecinta/aws-2tier-architecture" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-bold text-blue-400 hover:text-blue-300 transition">
+                    <i class="fab fa-github"></i> View Code <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+
+            <!-- PROJECT 4: Automated App Deployment (Code) -->
+            <div class="project-card bg-slate-800/40 p-8 rounded-2xl border border-slate-700 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-bold text-purple-400">Automated App Deployment</h3>
+                        <i class="fab fa-docker text-slate-500"></i>
+                    </div>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        Automated Flask/Django deployment using Ansible playbooks and Docker Compose. Ensured zero environment drift and portable containerized application scaling.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-[10px] uppercase font-bold mb-6">
+                        <span class="bg-slate-900 px-3 py-1 rounded text-purple-400 border border-purple-900">Ansible</span>
+                        <span class="bg-slate-900 px-3 py-1 rounded text-purple-400 border border-purple-900">Docker</span>
+                        <span class="bg-slate-900 px-3 py-1 rounded text-purple-400 border border-purple-900">Python</span>
+                    </div>
                 </div>
                 <a href="https://github.com/UmehJecinta/sample-ansible-pb" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-bold text-purple-400 hover:text-purple-300 transition">
                     <i class="fab fa-github"></i> View Playbook & Code <i class="fas fa-arrow-right text-xs"></i>
                 </a>
             </div>
 
-            <!-- PROJECT 5: Cloud Data Management -->
-            <div class="project-card bg-slate-800/40 p-8 rounded-2xl border border-slate-700">
-                <div class="flex justify-between items-start mb-4">
-                    <h3 class="text-xl font-bold text-orange-400">Cloud Data Management</h3>
-                    <i class="fas fa-database text-slate-500"></i>
+            <!-- PROJECT 5: Serverless E-Commerce Platform (Console Deployment - No GitHub link) -->
+            <div class="project-card bg-slate-800/40 p-8 rounded-2xl border border-slate-700 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-bold text-emerald-400">Serverless E-Commerce Platform</h3>
+                        <i class="fas fa-bolt text-slate-500"></i>
+                    </div>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        Designed a serverless application leveraging CloudFront, S3, DynamoDB, and Lambda. Resulted in 40% cost savings and 30% reduction in latency via CDN optimization.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-[10px] uppercase font-bold mb-6">
+                        <span class="bg-slate-900 px-3 py-1 rounded text-emerald-400 border border-emerald-900">Lambda</span>
+                        <span class="bg-slate-900 px-3 py-1 rounded text-emerald-400 border border-emerald-900">API Gateway</span>
+                        <span class="bg-slate-900 px-3 py-1 rounded text-emerald-400 border border-emerald-900">DynamoDB</span>
+                    </div>
                 </div>
-                <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                    Engineered data pipelines using AWS CLI/Lambda to sync S3 and DynamoDB. Established S3 Cross-Region Replication for high availability and disaster recovery.
-                </p>
-                <div class="flex flex-wrap gap-2 text-[10px] uppercase font-bold mb-6">
-                    <span class="bg-slate-900 px-3 py-1 rounded text-orange-400 border border-orange-900">AWS CLI</span>
-                    <span class="bg-slate-900 px-3 py-1 rounded text-orange-400 border border-orange-900">Lambda</span>
-                    <span class="bg-slate-900 px-3 py-1 rounded text-orange-400 border border-orange-900">S3 Replication</span>
+                <div class="inline-flex items-center gap-2 text-xs font-medium text-slate-400 bg-slate-900/60 px-3 py-2 rounded-lg border border-slate-800 w-fit">
+                    <i class="fas fa-cloud text-emerald-400"></i> AWS Console / Cloud Native Deployment
                 </div>
-                <a href="https://github.com/UmehJecinta" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-bold text-orange-400 hover:text-orange-300 transition">
-                    <i class="fab fa-github"></i> View Code <i class="fas fa-arrow-right text-xs"></i>
-                </a>
             </div>
+
+            <!-- PROJECT 6: Cloud Data Management (Console Deployment - No GitHub link) -->
+            <div class="project-card bg-slate-800/40 p-8 rounded-2xl border border-slate-700 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-bold text-orange-400">Cloud Data Management</h3>
+                        <i class="fas fa-database text-slate-500"></i>
+                    </div>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        Engineered data pipelines using AWS CLI/Lambda to sync S3 and DynamoDB. Established S3 Cross-Region Replication for high availability and disaster recovery.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-[10px] uppercase font-bold mb-6">
+                        <span class="bg-slate-900 px-3 py-1 rounded text-orange-400 border border-orange-900">AWS CLI</span>
+                        <span class="bg-slate-900 px-3 py-1 rounded text-orange-400 border border-orange-900">Lambda</span>
+                        <span class="bg-slate-900 px-3 py-1 rounded text-orange-400 border border-orange-900">S3 Replication</span>
+                    </div>
+                </div>
+                <div class="inline-flex items-center gap-2 text-xs font-medium text-slate-400 bg-slate-900/60 px-3 py-2 rounded-lg border border-slate-800 w-fit">
+                    <i class="fas fa-cloud text-orange-400"></i> AWS Console / Cloud Native Deployment
+                </div>
+            </div>
+
         </div>
     </section>
 
+    <!-- COMPETENCIES / SKILLS SECTION -->
     <section id="competencies" class="max-w-6xl mx-auto px-6 py-24 border-t border-slate-800">
         <h2 class="text-3xl font-bold text-white text-center mb-12">Core Competencies</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -227,6 +249,7 @@
         </div>
     </section>
 
+    <!-- CONTACT SECTION -->
     <section id="contact" class="max-w-4xl mx-auto px-6 py-24 text-center">
         <h2 class="text-4xl font-bold text-white mb-6">Get In Touch</h2>
         <div class="flex flex-col items-center space-y-4 text-lg mb-10">
