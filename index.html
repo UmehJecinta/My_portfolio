@@ -44,8 +44,9 @@
         <div class="flex flex-wrap justify-center gap-4 mb-10">
             <a href="https://www.linkedin.com/in/umeh-jecinta" target="_blank" class="flex items-center gap-2 bg-[#0077b5] px-6 py-3 rounded-lg font-bold text-white hover:opacity-90 transition"><i class="fab fa-linkedin"></i> LinkedIn</a>
             <a href="https://github.com/UmehJecinta" target="_blank" class="flex items-center gap-2 bg-[#24292e] px-6 py-3 rounded-lg font-bold text-white hover:opacity-90 transition"><i class="fab fa-github"></i> GitHub</a>
-            <a href="#contact" class="flex items-center gap-2 bg-[#10b981] px-6 py-3 rounded-lg font-bold text-white hover:opacity-90 transition"><i class="fas fa-envelope"></i> Contact Me</a>
+            <a href="#contact" class="flex items-center gap-2 bg-[#10b981] px-6 py-3 rounded-lg font-bold text-white hover:opacity-90 transition"><i class="fas fa-envelope"></i> Contact</a>
             <a href="./Jecinta_Umeohana_DevOps_CV_Updated.pdf" target="_blank" class="flex items-center gap-2 bg-[#8b5cf6] px-6 py-3 rounded-lg font-bold text-white hover:opacity-90 transition"><i class="fas fa-eye"></i> View CV</a>
+            <a href="./Jecinta_Umeohana_DevOps_CV_Updated.pdf" download="Jecinta_Umeohana_DevOps_CV.pdf" class="flex items-center gap-2 bg-[#6366f1] px-6 py-3 rounded-lg font-bold text-white hover:opacity-90 transition"><i class="fas fa-download"></i> Download CV</a>
         </div>
     </section>
 
@@ -56,12 +57,12 @@
         <div class="space-y-8 text-slate-300">
             <div>
                 <h3 class="text-xl font-bold text-white mb-4">Professional Summary</h3>
-                <p class="leading-relaxed mb-4 text-slate-300">
-                    Results-driven Cloud DevOps Engineer with 1.5+ years of intensive technical training and hands on project experience designing and deploying scalable cloud infrastructure on AWS. Demonstrated expertise in Infrastructure as Code (IaC) using Terraform, containerization with Docker and Kubernetes, CI/CD pipeline automation, and configuration management with Ansible.
-                </p>
                 <p class="leading-relaxed text-slate-300">
-                    Proven ability to architect secure, fault-tolerant, and cost-effective cloud solutions—including a 40% reduction in operational costs and 75% reduction in deployment time and to deliver complete, production-grade deployments end-to-end, from custom domain and SSL configuration through automated rollback-capable CI/CD pipelines. A strong problem-solver who learns new technologies quickly and communicates effectively across collaborative teams.
-                </p>
+                   Detail-oriented Cloud DevOps Engineer passionate about building secure, automated, and scalable infrastructure. Skilled in
+                   Infrastructure as Code with Terraform, containerization with Docker, and CI/CD pipeline automation with GitHub Actions, including
+                   automated health checks and rollback. Hands-on experience implementing container orchestration and GitOps tooling (Kubernetes,
+                   EKS, Helm, ArgoCD) and observability (Prometheus, Grafana) through self-directed projects. A fast learner who documents
+                   thoroughly and takes ownership of a problem until it is genuinely solved.            </p>
             </div>
 
             <div>
@@ -82,7 +83,7 @@
                         <p class="text-sm text-slate-400">Neocloud Technologies (September 2025)</p>
                     </div>
                     <div>
-                        <p class="text-white font-semibold">AWS Certified Solutions Architect</p>
+                        <p class="text-white font-semibold">AWS Certified Solutions Architect - Associate</p>
                         <p class="text-sm text-amber-400">In Progress</p>
                     </div>
                 </div>
@@ -92,66 +93,24 @@
 
     <!-- FEATURED PROJECTS SECTION -->
     <section id="projects" class="max-w-6xl mx-auto px-6 py-24 border-t border-slate-800">
-        <h2 class="text-3xl font-bold text-white text-center mb-12">Featured Projects</h2>
+        <h2 class="text-3xl font-bold text-white text-center mb-12">Featured Technical Projects</h2>
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-            <!-- PROJECT 1: 3-Tier Application & Automated CI/CD -->
+            <!-- PROJECT 1: AWS 2-Tier Web Application Infrastructure -->
             <div class="project-card bg-slate-800/40 p-8 rounded-2xl border border-slate-700 flex flex-col justify-between">
                 <div>
                     <div class="flex justify-between items-start mb-4">
-                        <h3 class="text-xl font-bold text-blue-400">3-Tier React/Django App Deployment</h3>
-                        <i class="fas fa-layer-group text-slate-500"></i>
-                    </div>
-                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                        Containerized React/Django/PostgreSQL on AWS EC2 inside a custom VPC. Automated GitHub Actions CI/CD using Docker Hub registry publishing, image SHA tagging, zero on-server builds, health check verification, and automated rollback triggers.
-                    </p>
-                    <div class="flex flex-wrap gap-2 text-[10px] uppercase font-bold mb-6">
-                        <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">AWS EC2 & VPC</span>
-                        <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">Docker Compose</span>
-                        <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">GitHub Actions</span>
-                    </div>
-                </div>
-                <a href="https://github.com/soundn/Containerisation-React-Django-App.git" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-bold text-blue-400 hover:text-blue-300 transition">
-                    <i class="fab fa-github"></i> View Code <i class="fas fa-arrow-right text-xs"></i>
-                </a>
-            </div>
-
-            <!-- PROJECT 2: Cloudflare Edge Pipeline & IaC -->
-            <div class="project-card bg-slate-800/40 p-8 rounded-2xl border border-slate-700 flex flex-col justify-between">
-                <div>
-                    <div class="flex justify-between items-start mb-4">
-                        <h3 class="text-xl font-bold text-blue-400">Automated Edge CI/CD Pipeline</h3>
-                        <i class="fas fa-globe text-slate-500"></i>
-                    </div>
-                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                        Engineered a GitOps CI/CD pipeline delivering this portfolio to Cloudflare Workers. Implemented automated HTML validation (<code class="text-blue-300">html5validator</code>) build gates, Wrangler IaC route scoping (<code class="text-blue-300">wrangler.jsonc</code>), least-privilege API token secrets, and DNS record cleanup.
-                    </p>
-                    <div class="flex flex-wrap gap-2 text-[10px] uppercase font-bold mb-6">
-                        <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">Cloudflare Workers</span>
-                        <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">Wrangler IaC</span>
-                        <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">GitHub Actions</span>
-                    </div>
-                </div>
-                <a href="https://github.com/UmehJecinta/My_portfolio" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-bold text-blue-400 hover:text-blue-300 transition">
-                    <i class="fab fa-github"></i> View Pipeline Code <i class="fas fa-arrow-right text-xs"></i>
-                </a>
-            </div>
-
-            <!-- PROJECT 3: AWS 2-Tier Infrastructure -->
-            <div class="project-card bg-slate-800/40 p-8 rounded-2xl border border-slate-700 flex flex-col justify-between">
-                <div>
-                    <div class="flex justify-between items-start mb-4">
-                        <h3 class="text-xl font-bold text-blue-400">AWS 2-Tier Infrastructure</h3>
+                        <h3 class="text-xl font-bold text-blue-400">AWS 2-Tier Web Application Infrastructure</h3>
                         <i class="fas fa-network-wired text-slate-500"></i>
                     </div>
                     <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                        Architected a fault-tolerant web app using Terraform (20+ resources). Configured custom VPC architecture across multi-AZ public/private subnets with Auto Scaling Groups and ALBs, cutting deployment time by 75%.
+                        Architected and deployed a fault-tolerant 2-tier AWS infrastructure with Terraform, provisioning 20+ resources across a multi-AZ VPC with public/private subnets, dual Application Load Balancers, and Auto Scaling Groups (2-4 instances, 99.9% availability). Enforced least-privilege security groups chained tier-to-tier and automated EC2 bootstrapping via Bash userdata, cutting deployment time by 75%.
                     </p>
                     <div class="flex flex-wrap gap-2 text-[10px] uppercase font-bold mb-6">
-                        <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">Terraform</span>
-                        <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">VPC</span>
-                        <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">Auto Scaling</span>
+                        <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">TERRAFORM</span>
+                        <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">AWS (VPC, EC2, ALB, ASG)</span>
+                        <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">NGINX & BASH</span>
                     </div>
                 </div>
                 <a href="https://github.com/UmehJecinta/aws-2tier-architecture" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-bold text-blue-400 hover:text-blue-300 transition">
@@ -159,135 +118,191 @@
                 </a>
             </div>
 
-            <!-- PROJECT 4: Bare-Metal Ansible Django Deploy -->
+            <!-- PROJECT 2: Containerized 3-Tier Application Deployment (computex) -->
             <div class="project-card bg-slate-800/40 p-8 rounded-2xl border border-slate-700 flex flex-col justify-between">
                 <div>
                     <div class="flex justify-between items-start mb-4">
-                        <h3 class="text-xl font-bold text-purple-400">Bare-Metal Ansible Django Deploy</h3>
-                        <i class="fas fa-server text-slate-500"></i>
+                        <h3 class="text-xl font-bold text-cyan-400">Containerized 3-Tier Application Deployment (computex)</h3>
+                        <i class="fas fa-layer-group text-slate-500"></i>
                     </div>
                     <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                        Built an Ansible playbook provisioning a containerless Ubuntu EC2 instance. Configured Gunicorn systemd services in a PEP 668 Python venv behind Nginx, using Ansible handlers to ensure zero-downtime config reloads.
+                        Deployed a React (Vite), Django REST Framework, and PostgreSQL app to AWS EC2 using Docker Compose behind Nginx, with GitHub Actions CI/CD (Docker Hub build-once delivery) and automated health checks with rollback. Extended to Kubernetes on a self-managed k3s cluster with persistent storage, Secrets, Traefik ingress, and Cloudflare Origin SSL.
                     </p>
                     <div class="flex flex-wrap gap-2 text-[10px] uppercase font-bold mb-6">
-                        <span class="bg-slate-900 px-3 py-1 rounded text-purple-400 border border-purple-900">Ansible</span>
-                        <span class="bg-slate-900 px-3 py-1 rounded text-purple-400 border border-purple-900">Gunicorn / systemd</span>
-                        <span class="bg-slate-900 px-3 py-1 rounded text-purple-400 border border-purple-900">Nginx & Python venv</span>
+                        <span class="bg-slate-900 px-3 py-1 rounded text-cyan-400 border border-cyan-900">DOCKER & KUBERNETES (K3S)</span>
+                        <span class="bg-slate-900 px-3 py-1 rounded text-cyan-400 border border-cyan-900">GITHUB ACTIONS</span>
+                        <span class="bg-slate-900 px-3 py-1 rounded text-cyan-400 border border-cyan-900">TRAEFIK & CLOUDFLARE</span>
                     </div>
                 </div>
-                <a href="https://github.com/UmehJecinta/sample-ansible-pb" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-bold text-purple-400 hover:text-purple-300 transition">
-                    <i class="fab fa-github"></i> View Playbook & Code <i class="fas fa-arrow-right text-xs"></i>
+                <a href="https://github.com/soundn/Containerisation-React-Django-App.git" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-bold text-cyan-400 hover:text-cyan-300 transition">
+                    <i class="fab fa-github"></i> View Repo (Contributor) <i class="fas fa-arrow-right text-xs"></i>
                 </a>
             </div>
 
-            <!-- PROJECT 5: Serverless E-Commerce Platform -->
+            <!-- PROJECT 3: S3 Cross-Region Replication with Lambda -->
             <div class="project-card bg-slate-800/40 p-8 rounded-2xl border border-slate-700 flex flex-col justify-between">
                 <div>
                     <div class="flex justify-between items-start mb-4">
-                        <h3 class="text-xl font-bold text-emerald-400">Serverless E-Commerce Platform</h3>
+                        <h3 class="text-xl font-bold text-emerald-400">S3 Cross-Region Replication with Lambda</h3>
                         <i class="fas fa-bolt text-slate-500"></i>
                     </div>
                     <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                        Designed a serverless application leveraging CloudFront, S3, DynamoDB, Lambda, and API Gateway. Achieved 40% cost reduction via pay-per-use architecture and reduced latency 30% via CDN edge caching.
+                        Built an event-driven, cross-region S3 replication pipeline as a disaster-recovery pattern: uploading a file to a source bucket automatically triggers a Lambda function that copies it into a second bucket in a different AWS region. Provisioned every component as code with Terraform across aliased provider regions with scoped IAM roles.
                     </p>
                     <div class="flex flex-wrap gap-2 text-[10px] uppercase font-bold mb-6">
-                        <span class="bg-slate-900 px-3 py-1 rounded text-emerald-400 border border-emerald-900">Lambda</span>
-                        <span class="bg-slate-900 px-3 py-1 rounded text-emerald-400 border border-emerald-900">API Gateway</span>
-                        <span class="bg-slate-900 px-3 py-1 rounded text-emerald-400 border border-emerald-900">DynamoDB</span>
+                        <span class="bg-slate-900 px-3 py-1 rounded text-emerald-400 border border-emerald-900">TERRAFORM</span>
+                        <span class="bg-slate-900 px-3 py-1 rounded text-emerald-400 border border-emerald-900">AWS LAMBDA & S3</span>
+                        <span class="bg-slate-900 px-3 py-1 rounded text-emerald-400 border border-emerald-900">IAM & PYTHON</span>
                     </div>
                 </div>
-                <div class="inline-flex items-center gap-2 text-xs font-medium text-slate-400 bg-slate-900/60 px-3 py-2 rounded-lg border border-slate-800 w-fit">
-                    <i class="fas fa-cloud text-emerald-400"></i> AWS Console / Cloud Native Deployment
-                </div>
+                <a href="https://github.com/UmehJecinta/s3-replication-terraform.git" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-bold text-emerald-400 hover:text-emerald-300 transition">
+                    <i class="fab fa-github"></i> View Code <i class="fas fa-arrow-right text-xs"></i>
+                </a>
             </div>
 
-            <!-- PROJECT 6: Cloud Data Management -->
+            <!-- PROJECT 4: AI-Powered Log Analyser -->
             <div class="project-card bg-slate-800/40 p-8 rounded-2xl border border-slate-700 flex flex-col justify-between">
                 <div>
                     <div class="flex justify-between items-start mb-4">
-                        <h3 class="text-xl font-bold text-orange-400">Cloud Data Management</h3>
-                        <i class="fas fa-database text-slate-500"></i>
+                        <h3 class="text-xl font-bold text-purple-400">AI-Powered Log Analyser</h3>
+                        <i class="fas fa-brain text-slate-500"></i>
                     </div>
                     <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                        Engineered event-driven data pipelines using AWS CLI/Lambda to sync S3 and DynamoDB. Established S3 Cross-Region Replication for high availability, disaster recovery, and data durability.
+                        Built and deployed a production-style, three-service AI application (React, FastAPI, PostgreSQL) using AWS Bedrock (Claude) to analyse application logs and return diagnoses. Provisioned as code with Terraform (VPC, EKS, RDS, ECR, IAM/IRSA), automated via Helm charts and ArgoCD GitOps sync, and monitored with Prometheus/Grafana.
                     </p>
                     <div class="flex flex-wrap gap-2 text-[10px] uppercase font-bold mb-6">
-                        <span class="bg-slate-900 px-3 py-1 rounded text-orange-400 border border-orange-900">AWS CLI</span>
-                        <span class="bg-slate-900 px-3 py-1 rounded text-orange-400 border border-orange-900">Lambda</span>
-                        <span class="bg-slate-900 px-3 py-1 rounded text-orange-400 border border-orange-900">S3 Replication</span>
+                        <span class="bg-slate-900 px-3 py-1 rounded text-purple-400 border border-purple-900">AWS EKS & BEDROCK</span>
+                        <span class="bg-slate-900 px-3 py-1 rounded text-purple-400 border border-purple-900">HELM & ARGOCD</span>
+                        <span class="bg-slate-900 px-3 py-1 rounded text-purple-400 border border-purple-900">PROMETHEUS & GRAFANA</span>
                     </div>
                 </div>
-                <div class="inline-flex items-center gap-2 text-xs font-medium text-slate-400 bg-slate-900/60 px-3 py-2 rounded-lg border border-slate-800 w-fit">
-                    <i class="fas fa-cloud text-orange-400"></i> AWS Console / Cloud Native Deployment
+                <a href="https://github.com/UmehJecinta/ai-log-analyser.git" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-bold text-purple-400 hover:text-purple-300 transition">
+                    <i class="fab fa-github"></i> View Code <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+
+            <!-- PROJECT 5: Automated Edge CI/CD Pipeline -->
+            <div class="project-card bg-slate-800/40 p-8 rounded-2xl border border-slate-700 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-bold text-blue-400">Automated Edge CI/CD Pipeline</h3>
+                        <i class="fas fa-globe text-slate-500"></i>
+                    </div>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        Engineered a CI/CD pipeline delivering this portfolio to Cloudflare Workers. Implemented automated HTML validation (<code class="bg-slate-900 px-1 py-0.5 rounded text-blue-300">html5validator</code>) build gates, Wrangler IaC route scoping (<code class="bg-slate-900 px-1 py-0.5 rounded text-blue-300">wrangler.jsonc</code>), least-privilege API token secrets, and DNS record cleanup.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-[10px] uppercase font-bold mb-6">
+                        <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">CLOUDFLARE WORKERS</span>
+                        <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">WRANGLER IAC</span>
+                        <span class="bg-slate-900 px-3 py-1 rounded text-blue-400 border border-blue-900">GITHUB ACTIONS</span>
+                    </div>
                 </div>
+                <a href="https://github.com/UmehJecinta/My_portfolio.git" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-bold text-blue-400 hover:text-blue-300 transition">
+                    <i class="fab fa-github"></i> View Code <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+
+            <!-- PROJECT 6: Ansible Deployment for Django Poll App -->
+            <div class="project-card bg-slate-800/40 p-8 rounded-2xl border border-slate-700 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-bold text-purple-400">Ansible Deployment for Django Poll App</h3>
+                        <i class="fas fa-server text-slate-500"></i>
+                    </div>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        Built an Ansible playbook provisioning a containerless Ubuntu EC2 instance for a Django app. Configured pinned dependencies inside a Python virtual environment, set up systemd Gunicorn services bound to localhost, and configured Nginx as a reverse proxy for zero-downtime reloads.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-[10px] uppercase font-bold mb-6">
+                        <span class="bg-slate-900 px-3 py-1 rounded text-purple-400 border border-purple-900">ANSIBLE</span>
+                        <span class="bg-slate-900 px-3 py-1 rounded text-purple-400 border border-purple-900">GUNICORN / SYSTEMD</span>
+                        <span class="bg-slate-900 px-3 py-1 rounded text-purple-400 border border-purple-900">NGINX & PYTHON VENV</span>
+                    </div>
+                </div>
+                <a href="https://github.com/UmehJecinta/sample-ansible-pb.git" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-bold text-purple-400 hover:text-purple-300 transition">
+                    <i class="fab fa-github"></i> View Code <i class="fas fa-arrow-right text-xs"></i>
+                </a>
             </div>
 
         </div>
     </section>
 
-    <!-- COMPETENCIES / SKILLS SECTION -->
+    <!-- CORE COMPETENCIES SECTION -->
     <section id="competencies" class="max-w-6xl mx-auto px-6 py-24 border-t border-slate-800">
         <h2 class="text-3xl font-bold text-white text-center mb-12">Core Competencies</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <!-- Cloud Platforms -->
             <div class="bg-slate-800/40 p-6 rounded-xl border border-slate-700">
                 <h3 class="text-blue-400 font-bold mb-4">Cloud Platforms</h3>
-                <ul class="text-sm space-y-2 text-slate-400">
-                    <li>AWS(IAM,EC2, VPC, S3, Lambda)</li>
-                    <li>API Gateway, Route 53</li>
-                    <li>CloudFront, DynamoDB</li>
-                    <li>CloudWatch, ALB, ASG</li>
-                </ul>
+                <p class="text-xs leading-relaxed text-slate-300">
+                    AWS (IAM, EC2, VPC, S3, Lambda, ECR, EKS, RDS, Bedrock)
+                </p>
+                <p class="text-xs leading-relaxed text-slate-300 mt-2">
+                    API Gateway, Route 53
+                </p>
+                <p class="text-xs leading-relaxed text-slate-300 mt-2">
+                    CloudFront, DynamoDB
+                </p>
+                <p class="text-xs leading-relaxed text-slate-300 mt-2">
+                    CloudWatch, ALB, ASG
+                </p>
             </div>
+
+            <!-- Infrastructure as Code -->
             <div class="bg-slate-800/40 p-6 rounded-xl border border-slate-700">
                 <h3 class="text-blue-400 font-bold mb-4">Infrastructure as Code</h3>
-                <ul class="text-sm space-y-2 text-slate-400">
-                    <li>Terraform</li>
-                    <li>Ansible Playbooks</li>
-                    <li>Wrangler IaC</li>
-                    <li>CloudFormation</li>
-                </ul>
+                <p class="text-xs leading-relaxed text-slate-300">Terraform</p>
+                <p class="text-xs leading-relaxed text-slate-300 mt-2">Ansible Playbooks</p>
+                <p class="text-xs leading-relaxed text-slate-300 mt-2">Wrangler IaC</p>
+
             </div>
+
+            <!-- Containers & Web -->
             <div class="bg-slate-800/40 p-6 rounded-xl border border-slate-700">
                 <h3 class="text-blue-400 font-bold mb-4">Containers & Web</h3>
-                <ul class="text-sm space-y-2 text-slate-400">
-                    <li>Docker & Docker Compose</li>
-                    <li>Docker Hub Registry</li>
-                    <li>Kubernetes</li>
-                    <li>Nginx Reverse Proxy & Gunicorn</li>
-                </ul>
+                <p class="text-xs leading-relaxed text-slate-300">Docker & Docker Compose</p>
+                <p class="text-xs leading-relaxed text-slate-300 mt-2">Docker Hub Registry</p>
+                <p class="text-xs leading-relaxed text-slate-300 mt-2">Kubernetes (k3s, Minikube, EKS, Helm, ArgoCD)</p>
+                <p class="text-xs leading-relaxed text-slate-300 mt-2">Nginx Reverse Proxy & Gunicorn / Traefik</p>
             </div>
+
+            <!-- Networking & Security -->
             <div class="bg-slate-800/40 p-6 rounded-xl border border-slate-700">
                 <h3 class="text-blue-400 font-bold mb-4">Networking & Security</h3>
-                <ul class="text-sm space-y-2 text-slate-400">
-                    <li>VPC Subnet Design</li>
-                    <li>IGW & NAT Gateways</li>
-                    <li>SSL/TSL</li>
-                    <li>DNS Management</li>
-                    <li>Security Groups & Firewalls</li>
-                </ul>
+                <p class="text-xs leading-relaxed text-slate-300">VPC Subnet Design</p>
+                <p class="text-xs leading-relaxed text-slate-300 mt-2">IGW & NAT Gateways</p>
+                <p class="text-xs leading-relaxed text-slate-300 mt-2">SSL/TLS</p>
+                <p class="text-xs leading-relaxed text-slate-300 mt-2">DNS Management</p>
+                <p class="text-xs leading-relaxed text-slate-300 mt-2">Security Groups & Firewalls / IAM IRSA & OIDC</p>
             </div>
+
+            <!-- Scripting & Languages -->
             <div class="bg-slate-800/40 p-6 rounded-xl border border-slate-700">
                 <h3 class="text-blue-400 font-bold mb-4">Scripting & Languages</h3>
-                <ul class="text-sm space-y-2 text-slate-400">
-                    <li>Bash</li>
-                    <li>YAML</li>
-                    <li>HCL (terraform)</li>
-                    <li>JSON</li>
-                </ul>
+                <p class="text-xs leading-relaxed text-slate-300">Bash</p>
+                <p class="text-xs leading-relaxed text-slate-300 mt-2">YAML</p>
+                <p class="text-xs leading-relaxed text-slate-300 mt-2">HCL (Terraform)</p>
+                <p class="text-xs leading-relaxed text-slate-300 mt-2">JSON</p>
+                <p class="text-xs leading-relaxed text-slate-300 mt-2">Python</p>
             </div>
+
+            <!-- Databases & Storage -->
             <div class="bg-slate-800/40 p-6 rounded-xl border border-slate-700">
                 <h3 class="text-blue-400 font-bold mb-4">Databases & Storage</h3>
-                <ul class="text-sm space-y-2 text-slate-400">
-                    <li>PostgreSQL</li>
-                    <li>DynamoDB</li>
-                </ul>
+                <p class="text-xs leading-relaxed text-slate-300">PostgreSQL</p>
+                <p class="text-xs leading-relaxed text-slate-300 mt-2">DynamoDB</p>
+                <p class="text-xs leading-relaxed text-slate-300 mt-2">AWS S3 & S3 Cross-Region Replication</p>
             </div>
+
+            <!-- CI/CD & Automation -->
             <div class="bg-slate-800/40 p-6 rounded-xl border border-slate-700">
                 <h3 class="text-blue-400 font-bold mb-4">CI/CD & Automation</h3>
-                <ul class="text-sm space-y-2 text-slate-400">
-                <li><i class="fab fa-github text-white mr-1"></i> GitHub Actions (Workflows, HTML Gates, Health Checks & Rollbacks)</li>
-                </ul>
+                <p class="text-xs leading-relaxed text-slate-300">
+                    <i class="fab fa-github mr-1"></i> GitHub Actions (Workflows, HTML Gates, Health Checks & Rollbacks)
+                </p>
+                <p class="text-xs leading-relaxed text-slate-300 mt-2">Prometheus & Grafana Observability</p>
             </div>
+
         </div>
     </section>
 
@@ -303,20 +318,16 @@
                 
                 <div class="bg-slate-800/40 p-8 rounded-2xl border border-slate-700">
                     <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-2 gap-1">
-                        <h3 class="text-xl font-bold text-white">Cloud Engineer Intern</h3>
+                        <h3 class="text-xl font-bold text-white">Cloud Engineer</h3>
                         <span class="text-sm font-semibold text-blue-400">2025</span>
                     </div>
                     <p class="text-sm font-medium text-slate-400 mb-6 italic">Neocloud Technologies</p>
                     
-                    <p class="text-sm text-slate-300 italic mb-4 leading-relaxed">
-                        Completed a hands-on Cloud Engineering internship covering AWS fundamentals, Infrastructure as Code, and serverless architecture alongside earning the NC 03 Cloud Computing certification.
-                    </p>
-
                     <ul class="text-sm text-slate-400 space-y-3 list-disc pl-5 leading-relaxed">
-                        <li>Contributed to assigned cloud infrastructure projects under active engineering mentorship.</li>
-                        <li>Architected and deployed a fault-tolerant 2-tier web application using Terraform across a multi-AZ VPC, reducing deployment time by 75%.</li>
-                        <li>Built a fully serverless e-commerce platform using CloudFront, S3, DynamoDB, Lambda, and API Gateway, cutting operational costs by 40%.</li>
-                        <li>Engineered event-driven data pipelines syncing S3 and DynamoDB via AWS CLI/Lambda with Cross-Region Replication for disaster recovery.</li>
+                        <li>Completed a hands-on Cloud Engineering internship covering AWS fundamentals, Infrastructure as Code, and serverless architecture, alongside the NC 03 Cloud Computing certification.</li>
+                        <li>Architected and deployed a fault-tolerant 2-tier AWS network with Terraform, provisioning a multi-AZ VPC, dual Application Load Balancers, and Auto Scaling Groups for high availability.</li>
+                        <li>Engineered an event-driven S3 Cross-Region Replication pipeline with Lambda and Terraform for disaster recovery and data durability.</li>
+                        <li>Deployed and configured static websites, Flask, and Django applications on Linux servers, setting up web servers and reverse proxies for reliable, production-style hosting.</li>
                     </ul>
                 </div>
             </div>
